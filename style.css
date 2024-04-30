@@ -1,0 +1,39 @@
+body {
+  transition: background-image 1s ease;
+  animation: backgroundAnimation 8s infinite alternate;
+}
+
+@keyframes backgroundAnimation {
+  0% {
+    background-image: url(beach.jpg);
+  }
+  100% {
+    background-image: url(sand.jpg);
+  }
+}
+
+#rectangle {
+  background-image: url(beach.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 100vh;
+  border: none;
+  border-radius: 10px;
+}
+#info .edit {
+  color: #cf7d44;
+  font-weight: bolder;
+}
+#info .edit2 {
+  color: #557873;
+  font-size: large;
+  font-weight: bold;
+}
+#info button {
+  background-color: #cf7d44;
+  border: none;
+}
+
+#info button:hover {
+  background-color: #557873;
+}
